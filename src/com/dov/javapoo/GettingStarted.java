@@ -3,12 +3,6 @@ package com.dov.javapoo;
 import java.util.Arrays;
 
 public class GettingStarted {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-        exo1();
-        exo2();
-        exo3();
-    }
 
     public static void exo1() {
         int a = 12;
