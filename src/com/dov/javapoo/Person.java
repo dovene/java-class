@@ -19,4 +19,8 @@ public class Person {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public void whoAmI(){
+        System.out.println(this.getName() +" a "+this.getAge() + " ans");
+    }
 }

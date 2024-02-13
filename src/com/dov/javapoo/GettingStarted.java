@@ -22,8 +22,6 @@ public class GettingStarted {
             min = a;
         }
         System.out.println("Le minimum est :" + min);
-
-
     }
 
     public static void exo2() {

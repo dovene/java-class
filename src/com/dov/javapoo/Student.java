@@ -10,4 +10,9 @@ public class Student extends Person {
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
+
+    @Override
+    public void whoAmI() {
+        System.out.println(super.getName() + " a " + super.getAge() + " ans" + "et est inscrit en " + this.getCourseName());
+    }
 }
