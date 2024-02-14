@@ -1,4 +1,4 @@
-package com.dov.javapoo;
+package com.dov.javapoo.poo;
 
 public class Person {
     private String name;

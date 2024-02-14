@@ -1,4 +1,4 @@
-package com.dov.javapoo;
+package com.dov.javapoo.gettingstarted;
 
 import java.util.Arrays;
 
