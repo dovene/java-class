@@ -1,4 +1,4 @@
-package com.dov.javapoo.poo;
+package com.dov.javapoo.poo.car;
 
 public class Car {
     private String brand;

@@ -1,7 +1,7 @@
 package com.dov.javapoo;
 
-import com.dov.javapoo.poo.Car;
-import com.dov.javapoo.poo.ElectricCar;
+import com.dov.javapoo.poo.car.Car;
+import com.dov.javapoo.poo.car.ElectricCar;
 
 import java.util.ArrayList;
 

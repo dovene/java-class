@@ -1,4 +1,4 @@
-package com.dov.javapoo.poo;
+package com.dov.javapoo.poo.car;
 
 public class ElectricCar extends Car {
     private int batteryLevel;
