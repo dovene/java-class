@@ -2,12 +2,14 @@ package com.dov.javapoo;
 
 import com.dov.javapoo.poo.car.Car;
 import com.dov.javapoo.poo.car.ElectricCar;
+import com.dov.javapoo.poo.person.Person;
+import com.dov.javapoo.poo.person.Student;
 
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        /*Person david = new Person();
+        Person david = new Person();
         david.setName("David");
         david.setAge(15);
        // System.out.println(david.getName() +" a "+david.getAge() + " ans");
@@ -19,7 +21,7 @@ public class Main {
        // System.out.println(max.getName() +" a "+max.getAge() + " ans"+ "et est inscrit en "+max.getCourseName());
 
         david.whoAmI();
-        max.whoAmI();*/
+        max.whoAmI();
 
         Car peuget208 = new Car("Peugeot", "208");
         ElectricCar teslaModel3 = new ElectricCar("Tesla", "model 3", 2000);
