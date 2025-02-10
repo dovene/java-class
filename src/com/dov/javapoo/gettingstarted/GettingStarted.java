@@ -12,14 +12,12 @@ public class GettingStarted {
         System.out.println(a + "+" + b + "+" + c + "=" + sum);
 
         int min = a;
-        if (a < min) {
-            min = a;
-        }
+
         if (b < min) {
-            min = a;
+            min = b;
         }
         if (c < min) {
-            min = a;
+            min = c;
         }
         System.out.println("Le minimum est :" + min);
     }

@@ -1,9 +1,6 @@
 package com.dov.javapoo.poo.bill;
 
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.function.Consumer;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class BillMain {
@@ -52,13 +49,33 @@ public class BillMain {
 
         System.out.println("--- Facture la plus chère ----");
 
+
+        // donne le numéro de la facture recherchée est sans utiliser 
+        Bill bill1 = bills.get(0);  
+        for (Bill bill2 : bills) {
+            if (bill2.computeAmountToPay() > bill1.computeAmountToPay()) {
+                bill1 = bill2;
+            }
+        }   
+        System.out.println("le numéro de la facture recherchée est : " + bill1.getBillId());
          //stream sorted
-        System.out.println("le numéro de la facture recherchée est : " + bills.stream().sorted((o1, o2) -> (int) (o2.computeAmountToPay() - o1.computeAmountToPay())).collect(Collectors.toList()).get(0).getBillId());
+         System.out.println("le numéro de la facture recherchée est : " + bills.stream().sorted((o1, o2) -> (int) (o2.computeAmountToPay() - o1.computeAmountToPay())).collect(Collectors.toList()).get(0).getBillId());
+      
+       
+         // donne le numéro de la facture recherchée
+        Bill bill3 = bills.get(0);
+        for (Bill bill4 : bills) {
+            if (bill4.computeAmountToPay() < bill3.computeAmountToPay()) {
+                bill3 = bill4;
+            }
+        }
+        System.out.println("le numéro de la facture recherchée est : " + bill3.getBillId());
+
         //stream max
         System.out.println("le numéro de la facture recherchée est : " + bills.stream().max((o1, o2) -> (int) (o1.computeAmountToPay() - o2.computeAmountToPay())).get().getBillId());
+      
 
         System.out.println("---- les factures de + de 100000 ---");
-
         bills.stream().filter(bill13 -> bill13.computeAmountToPay() > 100000).forEach(bill12 -> System.out.println(" facture n° " + bill12.getBillId() + " total :" + bill12.computeAmountToPay()));
 
     }
