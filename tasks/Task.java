@@ -34,7 +34,7 @@ class Task {
 
     public void display() {
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-        System.out.println("Tache numéro:" + number + ": " + description +
+        System.out.println("Tache numéro:" + number + " description: " + description +
                 " | Statut: " + (status == 1 ? "Terminé" : "En cours") +
                 " | Date limite: " + sdf.format(deadline));
     }
