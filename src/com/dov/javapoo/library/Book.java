@@ -1,4 +1,4 @@
-package library;
+package com.dov.javapoo.library;
 
 import java.util.Date;
 
