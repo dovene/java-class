@@ -6,9 +6,11 @@ public class MouldAbstractMain {
         MouldBase mouldA = MouldAbstractFactory.createMould("A");
         MouldBase mouldB = MouldAbstractFactory.createMould("B");
         MouldBase mouldC = MouldAbstractFactory.createMould("C");
+        MouldBase mouldD = MouldAbstractFactory.createMould("D");
 
         System.out.println(mouldA.getInformation());
         System.out.println(mouldB.getInformation());
         System.out.println(mouldC.getInformation());
+        System.out.println(mouldD.getInformation());
     }
 }
