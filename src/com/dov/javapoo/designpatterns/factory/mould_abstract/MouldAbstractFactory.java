@@ -9,7 +9,7 @@ public class MouldAbstractFactory {
             case "B":
                 return new MouldAbstractB("rouge", "losange");
             case "C":
-                return new MouldAbstractB("vert", "triangle");
+                return new MouldAbstractC("vert", "triangle");
             default:
                 throw new IllegalArgumentException("Type de moule inconnu : " + type);
         }
